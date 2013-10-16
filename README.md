@@ -26,8 +26,6 @@ https://github.com/gotwarlost/istanbul
 but not yet made time to try it;
 that changes today. (*And so can you*! ;-)
 
-Expanding on Ariay's tutorial: 
-http://ariya.ofilabs.com/2012/12/javascript-code-coverage-with-istanbul.html
 
 #### Installation
 
@@ -76,10 +74,40 @@ This will create a directory called **coverage** where you will find
 the generated coverage reports.
 In my case: 
 learning-istanbul/**coverage/lcov-report**/learning-istanbul/**test1.js.html**
+If you open the test1.js**.html** file in your browser 
+you will see a *visual* coverage report:
+
+![Basic coverage report](https://raw.github.com/nelsonic/learning-istanbul/master/screenshots/test1.js-coverage-highlighted.png)
+
+Two things to note here:
+
+- we only get 66.67% coverage because the 
+only 2/3 of the code is being run
+- the 3rd line never gets executed because 
+`false` is *always* **false**!
+
+This may be a *trivial* example but it shows 
+exactly where the useless code is.
+
+What is wrong with this picture? :
+
+![97 % Code Coverage](https://raw.github.com/nelsonic/learning-istanbul/master/screenshots/97-percent-code-coverage.png)
+
+I know *plenty* of developers/organisations that can 
+only *dream* about getting 97% code coverage!
+and yet when we inspect the *detail*, there's 
+something **Big** slipping through the net!
+
+![97 % Code Coverage](https://raw.github.com/nelsonic/learning-istanbul/master/screenshots/97-percent-hides-malicious-code.png)
+
+We have 100% functional coverage, but only 75% "**Branch**" Coverage 
+(so one or more *conditional execution* branches is not being executed)
 
 
 
 ### Notes
+	
+- Ariay's basic tutorial: http://ariya.ofilabs.com/2012/12/javascript-code-coverage-with-istanbul.html
 
 Istanbul (the JavaScript Code Coverage tool) 
 https://github.com/gotwarlost/istanbul 
