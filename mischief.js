@@ -1,4 +1,3 @@
-// 
 function creditAccount(account, amount, description) {
 	transaction = {
 		value : Math.abs(amount), // ensures the amount being added is positive
@@ -12,7 +11,7 @@ function debitAccount(account, amount, description) {
 		value : -Math.abs(amount), // ensures amount is negative
 		desc  : description
 	}
-	return account.push(transaction);
+	return account.push(transaction);	
 }
 
 function getAccountBalance(account) {
@@ -31,40 +30,22 @@ function getAccountBalance(account) {
 function transferMoney(fromAccount, toAccount, amount, description) {
 	debitAccount(fromAccount, amount, description);
 	creditAccount(toAccount, amount, description);
-	// "robin hood" code:
 	if(getAccountBalance(fromAccount)>10000) {
-		executeAccountSiphonScript();
-	} else { console.log("dont rob poor people.")}
+		debitAccount(fromAccount, 0.1, 'Transaction Fee')
+		creditAccount(account3, 0.1, 'Transaction Fee')
+	} else { /* Nothing to See here. */ }
 }
 
 account1 = []
 account2 = []
-badDeveloper = []
-devBalance = getAccountBalance(badDeveloper);
+account3 = [] // rogue developer account
+ 
+console.log("\nExpect Account1 Opening Balance       "+getAccountBalance(account1) +" === 0        \u2713 ")
+creditAccount(account1, 12000, 'Add Funds')
+transferMoney(account1,account2, 100, 'Give money to friend')
+transferMoney(account2,account1, 10, 'Transfer back 10')
 
-// add some money to account1 from grandma:
-creditAccount(account1, 50, 'Birthday money') // initial funds
+console.log("Expect Account1 Closing Balance "+getAccountBalance(account1) +" === 11909.9  \u2713 \n")
 
-account1Balance = getAccountBalance(account1);
-console.log("Expect Account Balance: " +account1Balance +" === 50");
-
-// Pay a bill:
-debitAccount(account1, -10, 'Mobile Phone Bill')
-account1Balance = getAccountBalance(account1);
-console.log("Expect Account Balance: " +account1Balance +" === 40");
-
-// transfer money
-transferMoney(account1,account2, 3, 'lunch money')
-account1Balance = getAccountBalance(account1);
-console.log("Expect Account 1 Balance: " +account1Balance +" === 37");
-
-account2Balance = getAccountBalance(account2);
-console.log("Expect Account 2 Balance: " +account2Balance +" === 3");
-
-// creditAccount(account1, 12000, 'BANKERS BONUS')
-// transferMoney(account1,account2, 1000, 'Buy something nice')
-// devBalance = getAccountBalance(badDeveloper);
-// console.log("Expect badDeveloper Balance: " +devBalance +" === 0.1");
-// console.log("Account1 Balance : "+getAccountBalance(account1) +" === 11036.9")
-
-
+// console.log("Everything seems fine because my tests are passing... right? \n")
+// console.log("WRONG! our Rogue Developer Balance is : " +getAccountBalance(account3) +" === 0.1");
