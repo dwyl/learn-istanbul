@@ -1,4 +1,4 @@
-learning-istanbul
+learn-istanbul
 =================
 
 Learn how to use the Istanbul JavaScript Code Coverage Tool
@@ -7,10 +7,10 @@ Learn how to use the Istanbul JavaScript Code Coverage Tool
 
 ![Sign Not In Use](http://i1.mirror.co.uk/incoming/article1433397.ece/ALTERNATES/s2197/The%20world's%20most%20stupid%20signs-1433397 "Sign not in use!")
 
-Like the road sign that is "*Not In Use*" much of the code 
-that is written never gets executed. 
+Like the road sign that is "***Not In Use***" much of the code 
+that is written ***never*** gets ***executed***. 
 
-Code coverage tells you when something you have written is 
+**Code coverage** tells you when something you have written is 
 [superfluous](https://www.google.com/search?q=superfluous) 
 so you can either write a test to see if its still useful 
 or remove the unnecessary bloat in your codebase.
