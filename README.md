@@ -1,7 +1,7 @@
 learning-istanbul
 =================
 
-Test files used while learning the Istanbul Code Coverage tool
+Learn how to use the Istanbul JavaScript Code Coverage Tool
 
 - - -
 
