@@ -1,6 +1,8 @@
 learn-istanbul
 =================
 
+![87% Test Coverage](http://i.imgur.com/NTI4Pxw.png)
+
 Learn how to use the Istanbul JavaScript Code Coverage Tool
 
 - - -
