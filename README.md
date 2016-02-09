@@ -49,7 +49,7 @@ if you get a *error* when trying to run the **-bash: istanbul: command not found
 you may need to install instanbul *globally*:
 
 ```sh
-sudo npm install istanbul -g
+npm install istanbul -g
 ```
 
 ##### Local
