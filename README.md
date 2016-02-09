@@ -66,8 +66,6 @@ to check if the installation worked, run the command
 ./node_modules/.bin/istanbul help
 ```
 
-to make this easier you can edit the package.json and insert
-
 #### Simple Example
 
 For our first example create a file called **test.js**
