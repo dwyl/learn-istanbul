@@ -1,7 +1,8 @@
-Learn Istanbul
+# Learn Istanbul
 
 [![Build Status](https://travis-ci.org/dwyl/learn-istanbul.svg?branch=master)](https://travis-ci.org/dwyl/learn-istanbul)
 [![codecov.io](https://codecov.io/github/dwyl/learn-istanbul/coverage.svg?branch=master)](https://codecov.io/github/dwyl/learn-istanbul?branch=master)
+[![devDependency Status](https://david-dm.org/dwyl/learn-istanbul/dev-status.svg)](https://david-dm.org/dwyl/learn-istanbul#info=devDependencies)
 
 
 Learn how to use Istanbul to check/track Code Coverage in your JavaScript projects.
@@ -30,7 +31,11 @@ The rest of this page will focus on *practical* usage example, so
 if you are completely new to Code Coverage we recommend you read the
 wikipedia article: http://en.wikipedia.org/wiki/Code_coverage first.
 
-- - -
+*Istanbul* is a code coverage analysis script you run when executing your unit tests:
+https://github.com/gotwarlost/istanbul/
+we like it because it's simple and prints out nice html reports (*see below*)
+
+
 
 ## How?
 
@@ -175,3 +180,6 @@ https://github.com/gotwarlost/istanbul
 should not to be confused with [istanbul](https://wiki.gnome.org/Istanbul)
 the desktop screen recorder, they are totally diferent animals!
 Shame about the name collision... :-(
+
+[![HitCount](https://hitt.herokuapp.com/dwyl/learn-istanbul.svg)](https://github.com/dwyl/learn-istanbul)
+[![Join the chat at https://gitter.im/dwyl/chat](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/dwyl/chat?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
