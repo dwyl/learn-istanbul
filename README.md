@@ -1,5 +1,6 @@
 Learn Istanbul
 
+[![Build Status](https://travis-ci.org/dwyl/learn-istanbul.svg?branch=master)](https://travis-ci.org/dwyl/learn-istanbul)
 
 
 Learn how to use Istanbul to check/track Code Coverage in your JavaScript projects.
@@ -136,9 +137,14 @@ This means one or more *conditional execution* branches is not being executed.
 
 We can request that the developer(s) improve the tests to increase coverage:
 
+![learn-istanbul-mischief-100-percent](https://cloud.githubusercontent.com/assets/194400/14235536/2e274184-f9f9-11e5-8999-9dc92cbb3486.png)
+
+So everything is good, *right*?
+
+Not really, the offending code is still there, we just increased *coverage*
+by writing a test that ensured that the branch was executed.
 
 
-So everyting is good, *right*?
 
 Most of the time it will be something innocuous but what if a disgruntled
 person slipped in something like:
@@ -153,7 +159,7 @@ The **97% Coverage** is *not looking so hot anymore* ...
 What if we add a Test that *follows* the branch containing the rogue code?
 We reach our mythical 100% Coverage:
 
-![100 % Code Coverage](https://raw.github.com/nelsonic/learning-istanbul/master/screenshots/100-percent-coverage-masks-rogue-code.png)
+![learn-istanbul-mischief-100-percent](https://cloud.githubusercontent.com/assets/194400/14235536/2e274184-f9f9-11e5-8999-9dc92cbb3486.png)
 
 And if we simply allow this code to be promoted without further checks,
 the rogue code will be in production and soon forgotten.
