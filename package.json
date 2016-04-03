@@ -5,7 +5,7 @@
   "main": "test.js",
   "scripts": {
     "coverage": "node ./node_modules/.bin/istanbul cover test.js",
-    "test": "npm run coverage"
+    "test": "node ./node_modules/.bin/istanbul cover mischief.js"
   },
   "repository": {
     "type": "git",
