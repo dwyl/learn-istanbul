@@ -1,33 +1,36 @@
-learn-istanbul
-=================
+Learn Istanbul
 
-![87% Test Coverage](http://i.imgur.com/NTI4Pxw.png)
 
-Learn how to use the Istanbul JavaScript Code Coverage Tool
 
-- - -
-
-![Sign Not In Use](http://i1.mirror.co.uk/incoming/article1433397.ece/ALTERNATES/s2197/The%20world's%20most%20stupid%20signs-1433397 "Sign not in use!")
-
-Like the road sign that is "***Not In Use***" much of the code
-that is written ***never*** gets ***executed***.
-
-**Code coverage** tells you when something you have written is
-[superfluous](https://www.google.com/search?q=superfluous)
-so you can either write a test to see if its still useful
-or remove the unnecessary bloat in your codebase.
-
-If you are completely new to Code Coverage there is a great wikipedia article:
-http://en.wikipedia.org/wiki/Code_coverage
+Learn how to use Istanbul to check/track Code Coverage in your JavaScript projects.
 
 - - -
 
+![Sign Not In Use](https://cloud.githubusercontent.com/assets/194400/14234939/5e182636-f9e7-11e5-9fa3-7509389416be.jpeg "Sign not in use!")
 
-I've heard a lot about Istanbul
-https://github.com/gotwarlost/istanbul
-but not yet made time to try it;
-that changes today. (*And so can you*! ;-)
+## Why?
 
+Like the road sign that is "***Not In Use***" too much code
+being written ***never*** gets ***executed***.
+
+There are a *few* obvious issues with this:
+1. if un-tested code remains in the codebase it can contain ***unknown behaviour*** e.g. ***bugs***.
+2. untested features are more ***difficult to maintain*** without introducing ***breaking changes***.
+3. un-tested code can ***clutter*** a project and accumulates [***technical debt***](https://en.wikipedia.org/wiki/Technical_debt) that ***wastes time***.
+
+## What?
+
+**Code coverage** tells you when code you have written is being executed
+so you can decide if un-covered lines are [superfluous](https://www.google.com/search?q=superfluous)
+(*and can be removed*) *or* require additional testing.
+
+The rest of this page will focus on *practical* usage example, so
+if you are completely new to Code Coverage we recommend you read the
+wikipedia article: http://en.wikipedia.org/wiki/Code_coverage first.
+
+- - -
+
+## How?
 
 #### Installation
 
@@ -36,7 +39,7 @@ that changes today. (*And so can you*! ;-)
 If you do not already have istanbul installed on your system,
 
 ```sh
-npm install istanbul
+npm install istanbul --save-dev
 ```
 
 to check if the installation worked, run the following command:
@@ -174,6 +177,7 @@ who write the code.
 And there is still *no substitute* for **Code Review**!
 
 
+![87% Test Coverage](http://i.imgur.com/NTI4Pxw.png)
 
 ### Notes
 
