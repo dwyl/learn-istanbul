@@ -32,52 +32,31 @@ wikipedia article: http://en.wikipedia.org/wiki/Code_coverage first.
 
 ## How?
 
-#### Installation
+### Installation
 
-##### Global
-
-If you do not already have istanbul installed on your system,
+We prefer to install istanbul as a "*devDependencies*" in each of our projects:
 
 ```sh
 npm install istanbul --save-dev
 ```
 
-to check if the installation worked, run the following command:
+to check if the installation worked, (*copy-paste and*) run the following command
+in your terminal:
 
 ```sh
-istanbul help
+node_modules/.bin/istanbul help
 ```
 
-if you get a *error* when trying to run the **-bash: istanbul: command not found**
-you may need to install instanbul *globally*:
 
-```sh
-npm install istanbul -g
-```
+### Simple Example
 
-##### Local
-
-If you want to install istanbul in a directory, cd into that directory and run the command
-
-```sh
-npm install istanbul --save-dev
-```
-
-to check if the installation worked, run the command
-
-```sh
-./node_modules/.bin/istanbul help
-```
-
-#### Simple Example
-
-For our first example create a file called **test.js**
+For our first example create a file called `test.js`.
 
 ```sh
 vi test.js
 ```
 
-with the following code:
+type (*or copy-paste*) the following code in the `test.js` file:
 
 ```javascript
 x = 42;
@@ -86,14 +65,6 @@ if(false)
 ```
 
 Now run the istanbul command to generate a coverage report:
-
-If you have globally installed istanbul run
-
-```sh
-istanbul cover test.js
-```
-
-If you have istanbul installed locally run
 
 ```sh
 node ./node_modules/.bin/istanbul cover test.js
@@ -105,7 +76,7 @@ Alternatively you can insert the line
 "coverage": "node ./node_modules/.bin/istanbul cover test.js"
 ```
 
-into your package.json and run
+into the scripts section of your `package.json` and run
 
 ```sh
 npm run coverage
