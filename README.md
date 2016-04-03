@@ -1,6 +1,7 @@
 Learn Istanbul
 
 [![Build Status](https://travis-ci.org/dwyl/learn-istanbul.svg?branch=master)](https://travis-ci.org/dwyl/learn-istanbul)
+[![codecov.io](https://codecov.io/github/dwyl/learn-istanbul/coverage.svg?branch=master)](https://codecov.io/github/dwyl/learn-istanbul?branch=master)
 
 
 Learn how to use Istanbul to check/track Code Coverage in your JavaScript projects.
@@ -135,17 +136,6 @@ something ***big*** slipping through the net!
 We have **100%** *functional* code coverage, but only 50% "**Branch**" Coverage.
 This means one or more *conditional execution* branches is not being executed.
 
-We can request that the developer(s) improve the tests to increase coverage:
-
-![learn-istanbul-mischief-100-percent](https://cloud.githubusercontent.com/assets/194400/14235536/2e274184-f9f9-11e5-8999-9dc92cbb3486.png)
-
-So everything is good, *right*?
-
-Not really, the offending code is still there, we just increased *coverage*
-by writing a test that ensured that the branch was executed.
-
-
-
 Most of the time it will be something innocuous but what if a disgruntled
 person slipped in something like:
 
@@ -164,10 +154,10 @@ We reach our mythical 100% Coverage:
 And if we simply allow this code to be promoted without further checks,
 the rogue code will be in production and soon forgotten.
 
-![100 % Code Coverage includes Rogue Code](https://raw.github.com/nelsonic/learning-istanbul/master/screenshots/100-percent-coverage-but-still-has-rogue-code.png)
+![100 % Code Coverage includes Rogue Code](https://cloud.githubusercontent.com/assets/194400/14235588/c18e7ee6-f9fa-11e5-93c8-48ba6a25f2da.png)
 
-The solution here is to not rely (*solely*) on tools such as Istanbul to check code.
-I would advocate a separation between the people writing the tests and the developers
+The solution here is to *not* rely (*solely*) on tools such as Istanbul to check code.
+Its *essential* would advocate a separation between the people writing the tests and the developers
 who write the code.
 
 And there is still *no substitute* for **Code Review**!
