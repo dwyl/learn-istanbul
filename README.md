@@ -115,6 +115,11 @@ exactly where the useless code is.
 
 #### A more "Real World" Example
 
+Try executing the `mischief.js` file by running `npm test`:
+
+![learn-istanbul-terminal-run](https://cloud.githubusercontent.com/assets/194400/14235496/d5ae4f4e-f9f7-11e5-9388-c50dcca10cbf.png)
+
+
 What is wrong with the following picture?
 
 ![96 % Code Coverage](https://cloud.githubusercontent.com/assets/194400/14235348/7d80c1de-f9f3-11e5-88bd-de9e4d792c3b.png)
@@ -130,6 +135,7 @@ We have **100%** *functional* code coverage, but only 50% "**Branch**" Coverage.
 This means one or more *conditional execution* branches is not being executed.
 
 We can request that the developer(s) improve the tests to increase coverage:
+
 
 
 So everyting is good, *right*?
