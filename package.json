@@ -4,7 +4,7 @@
   "description": "Learn how to use istanbul for tracking test/code coverage in your JS projects",
   "main": "test.js",
   "scripts": {
-    "coverage": "node ./node_modules/.bin/istanbul cover test.js",
+    "coverage": "node ./node_modules/.bin/istanbul cover ./test.js",
     "test": "node ./node_modules/.bin/istanbul cover mischief.js"
   },
   "repository": {

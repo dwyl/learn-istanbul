@@ -82,20 +82,26 @@ into the scripts section of your `package.json` and run
 npm run coverage
 ```
 
-This will create a directory called **coverage** where you will find
-the generated coverage reports.
-In my case:
-learning-istanbul/**coverage/lcov-report**/learning-istanbul/**test1.js.html**
+This will create a directory in your project called **coverage**
+where you will find the generated coverage reports.
+In our case:
+[learn-istanbul/**coverage/lcov-report**/learning-istanbul/**test1.js.html**]()
 If you open the test1.js**.html** file in your browser
 you will see a *visual* coverage report:
 
-![Basic coverage report](https://raw.github.com/nelsonic/learning-istanbul/master/screenshots/test1.js-coverage-highlighted.png)
+
+
+![Basic coverage report](https://cloud.githubusercontent.com/assets/194400/14235269/27f13d9a-f9f1-11e5-9b43-5c8c659717e0.png)
 
 Istanbul gives us four code coverage metrics:
 * **Statements**: How many of the [statements](http://www.2ality.com/2012/09/expressions-vs-statements.html) in you code are executed.
 * **Branches**: Conditional statements create branches of code which may not be executed (e.g. `if/else`). This metric tells you how many of your branches have been executed.
 * **Functions**: The proportion of the functions you have defined which have been called.
 * **Lines**: The proportion of lines of code which have been executed.
+
+when you click `test.js` to view the coverage for the file you see:
+
+![learn-istanbul-test js_html](https://cloud.githubusercontent.com/assets/194400/14235369/2e87e3cc-f9f4-11e5-8701-09a5c538f98e.png)
 
 Two things to note in the example above:
 
@@ -107,25 +113,32 @@ only 2/3 of the code is being run
 This may be a *trivial* example but it shows
 exactly where the useless code is.
 
-What is wrong with this picture? :
+#### A more "Real World" Example
 
-![97 % Code Coverage](https://raw.github.com/nelsonic/learning-istanbul/master/screenshots/97-percent-code-coverage.png)
+What is wrong with the following picture?
 
-I know *plenty* of developers/organisations that can
-only *dream* about getting 97% code coverage!
+![96 % Code Coverage](https://cloud.githubusercontent.com/assets/194400/14235348/7d80c1de-f9f3-11e5-88bd-de9e4d792c3b.png)
+
+There are *plenty* of developers/organisations that can
+only *dream* about getting 96% code coverage!
 and yet when we inspect the *detail*, there's
-something **Big** slipping through the net!
+something ***big*** slipping through the net!
 
-![97 % Code Coverage](https://raw.github.com/nelsonic/learning-istanbul/master/screenshots/97-percent-hides-malicious-code.png)
+![learn-istanbul-mischief-on-line-34](https://cloud.githubusercontent.com/assets/194400/14235401/3d8c14fa-f9f5-11e5-946a-d57484b46ce7.png)
 
-We have **100%** *functional* code coverage, but only 75% "**Branch**" Coverage.
+We have **100%** *functional* code coverage, but only 50% "**Branch**" Coverage.
 This means one or more *conditional execution* branches is not being executed.
+
+We can request that the developer(s) improve the tests to increase coverage:
+
+
+So everyting is good, *right*?
 
 Most of the time it will be something innocuous but what if a disgruntled
 person slipped in something like:
 
 ```javascript
-if(employee.status == 'terminated' && employee.left - today() > 90) {
+if(employee.status === 'terminated' && employee.left - today() > 90) {
 	selfDestuct();
 }
 ```
