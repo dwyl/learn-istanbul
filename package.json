@@ -1,0 +1,31 @@
+{
+  "name": "learn-istanbul",
+  "version": "2.0.0",
+  "description": "Learn how to use istanbul for tracking test/code coverage in your JS projects",
+  "main": "test.js",
+  "scripts": {
+    "coverage": "node ./node_modules/.bin/istanbul cover ./test.js",
+    "test": "node ./node_modules/.bin/istanbul cover mischief.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwyl/learn-istanbul.git"
+  },
+  "keywords": [
+    "istanbul",
+    "code",
+    "coverage",
+    "tutorial",
+    "how-to",
+    "learn"
+  ],
+  "author": "dwyl",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/dwyl/learn-istanbul/issues"
+  },
+  "homepage": "https://github.com/dwyl/learn-istanbul#readme",
+  "devDependencies": {
+    "istanbul": "^0.4.2"
+  }
+}
