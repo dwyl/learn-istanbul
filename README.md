@@ -80,7 +80,7 @@ node ./node_modules/.bin/istanbul cover test.js
 Alternatively you can insert the line
 
 ```json
-"coverage": "node ./node_modules/.bin/istanbul cover test.js"
+"coverage": "istanbul cover ./test.js"
 ```
 
 into the scripts section of your `package.json` and run
