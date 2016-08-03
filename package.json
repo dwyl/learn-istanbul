@@ -17,7 +17,8 @@
     "coverage",
     "tutorial",
     "how-to",
-    "learn"
+    "learn",
+    "testing"
   ],
   "author": "dwyl",
   "license": "GPL-2.0",
@@ -26,6 +27,6 @@
   },
   "homepage": "https://github.com/dwyl/learn-istanbul#readme",
   "devDependencies": {
-    "istanbul": "^0.4.2"
+    "istanbul": "^0.4.4"
   }
 }
