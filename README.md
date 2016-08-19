@@ -170,12 +170,12 @@ And there is still *no substitute* for **Code Review**!
 
 ![87% Test Coverage](http://i.imgur.com/NTI4Pxw.png)
 
+<br />
 
 ## Tracking Coverage as-a-Service
 
 Knowing the coverage _locally_ is nice, but it's _way_ more useful to a team
-to track coverage over time using a service.
-
+to track coverage over time using an _independent_ service.
 Thankfully, there are a few you can chose from:
 
 + ***Codecov***: https://codecov.io/#features
@@ -226,7 +226,7 @@ When the coverage is lower the Pull Request "fails":
 ![learn-istanbul-pr-fails-on-lower-coverage](https://cloud.githubusercontent.com/assets/194400/17811085/d0a93364-6618-11e6-9694-12a033f2be63.png)
 
 
-> Note: if you want to *prevent* people (*your team*) from creating Pull Requests with
+> **Note**: if you want to *prevent* people (*your team*) from creating Pull Requests with
 less than an agreed level of coverage (_e.g 100%!!_), add a [`coverage`](https://github.com/dwyl/hapi-auth-jwt2/blob/452368830d0d7971f93219245f6cad56f2ece9e6/package.json#L57) checking script and corresponding [`pre-commit hook`](https://github.com/dwyl/hapi-auth-jwt2/blob/452368830d0d7971f93219245f6cad56f2ece9e6/package.json#L64). More on pre-commit hooks: https://github.com/dwyl/learn-pre-commit
 
 
@@ -247,13 +247,13 @@ Then paste the markdown into your Readme.
 https://ariya.io/2015/08/javascript-code-coverage-dashboard-with-codecov-io
 
 
-> Note: DWYL is not _financially_ affiliated with Codecov,
+> **Note**: DWYL is not _financially_ affiliated with Codecov,
 but we :heart: [@stevepeak](https://github.com/stevepeak) and the product he
 has built. They are focussed on
 [_doing one thing **really well**_](https://www.google.co.uk/search?q=do+one+thing+well&tbm=isch)
 and have innovated a lot in code coverage tracking making developers lives *much* better.
 
-### Notes
+### Background Reading
 
 - Ariay's basic tutorial: http://ariya.ofilabs.com/2012/12/javascript-code-coverage-with-istanbul.html
 - Jasmine Test Coverage: http://architects.dzone.com/articles/code-coverage-jasmine-tests
