@@ -146,7 +146,7 @@ person slipped in something like:
 
 ```javascript
 if(employee.status === 'terminated' && employee.left - today() > 90) {
-	selfDestuct();
+	selfDestruct();
 }
 ```
 The **97% Coverage** is *not looking so hot anymore* ...
