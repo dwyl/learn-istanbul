@@ -37,9 +37,9 @@ function transferMoney(fromAccount, toAccount, amount, description) {
 	}
 }
 
-account1 = [];
-account2 = [];
-account3 = []; // rogue developer account
+let account1 = [];
+let account2 = [];
+let account3 = []; // rogue developer account
 
 console.log("\nExpect Account1 Opening Balance       "+getAccountBalance(account1) +" === 0        \u2713 ");
 creditAccount(account1, 5000, 'Add Funds');
