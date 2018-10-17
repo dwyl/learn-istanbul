@@ -1,20 +1,21 @@
 <div align="center">
 
-# Learn Istanbul ~ Code Coverage for JavaScript
+# Learn Istanbul
+<br />
 
 [![Build Status](https://img.shields.io/travis/dwyl/learn-istanbul/master.svg?style=flat-square)](https://travis-ci.org/dwyl/learn-istanbul)
 [![codecov.io](https://img.shields.io/codecov/c/github/dwyl/learn-istanbul/master.svg?style=flat-square)](http://codecov.io/github/dwyl/learn-istanbul?branch=master)
 [![Code Climate](https://img.shields.io/codeclimate/maintainability/dwyl/learn-istanbul.svg?style=flat-square)](https://codeclimate.com/github/dwyl/learn-istanbul)
 [![devDependencies Status](https://david-dm.org/dwyl/learn-istanbul/dev-status.svg?style=flat-square)](https://david-dm.org/dwyl/learn-istanbul?type=dev)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/dwyl/learn-istanbul/issues)
-<!-- uncomment when PR is ready!
 [![HitCount](http://hits.dwyl.io/dwyl/learn-istanbul.svg)](http://hits.dwyl.io/dwyl/learn-istanbul)
--->
+<br />
 
 Learn how to use Istanbul
 to check/track Code Coverage in your JavaScript projects.
+<br />
 
-<img src="https://cloud.githubusercontent.com/assets/194400/14234939/5e182636-f9e7-11e5-9fa3-7509389416be.jpeg"
+<img src="https://user-images.githubusercontent.com/194400/47108248-1adaf880-d243-11e8-9eeb-1f60a7a828db.jpg"
 alt="Sign not in use!">
 
 </div>
