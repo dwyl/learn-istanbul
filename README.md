@@ -1,24 +1,35 @@
-# Learn Istanbul
+<div align="center">
 
-[![Build Status](https://travis-ci.org/dwyl/learn-istanbul.svg?branch=master)](https://travis-ci.org/dwyl/learn-istanbul)
-[![codecov](https://codecov.io/gh/dwyl/learn-istanbul/branch/master/graph/badge.svg)](https://codecov.io/gh/dwyl/learn-istanbul)
-[![devDependency Status](https://david-dm.org/dwyl/learn-istanbul/dev-status.svg)](https://david-dm.org/dwyl/learn-istanbul#info=devDependencies)
+# Learn Istanbul ~ Code Coverage for JavaScript
 
+[![Build Status](https://img.shields.io/travis/dwyl/learn-istanbul/master.svg?style=flat-square)](https://travis-ci.org/dwyl/learn-istanbul)
+[![codecov.io](https://img.shields.io/codecov/c/github/dwyl/learn-istanbul/master.svg?style=flat-square)](http://codecov.io/github/dwyl/learn-istanbul?branch=master)
+[![Code Climate](https://img.shields.io/codeclimate/maintainability/dwyl/learn-istanbul.svg?style=flat-square)](https://codeclimate.com/github/dwyl/learn-istanbul)
+[![devDependencies Status](https://david-dm.org/dwyl/learn-istanbul/dev-status.svg?style=flat-square)](https://david-dm.org/dwyl/learn-istanbul?type=dev)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/dwyl/learn-istanbul/issues)
+<!-- uncomment when PR is ready!
+[![HitCount](http://hits.dwyl.io/dwyl/learn-istanbul.svg)](http://hits.dwyl.io/dwyl/learn-istanbul)
+-->
 
-Learn how to use Istanbul to check/track Code Coverage in your JavaScript projects.
+Learn how to use Istanbul
+to check/track Code Coverage in your JavaScript projects.
 
-- - -
+<img src="https://cloud.githubusercontent.com/assets/194400/14234939/5e182636-f9e7-11e5-9fa3-7509389416be.jpeg"
+alt="Sign not in use!">
 
-![Sign Not In Use](https://cloud.githubusercontent.com/assets/194400/14234939/5e182636-f9e7-11e5-9fa3-7509389416be.jpeg "Sign not in use!")
+</div>
+
 
 ## Why?
 
-Like the road sign that is "***Not In Use***" too much code
+Like the road sign that is "***Not In Use***" _most_ of the code
 being written ***never*** gets ***executed***.
 
 There are a *few* obvious issues with this:
-1. if un-tested code remains in the codebase it can contain ***unknown behaviour*** e.g. ***bugs***.
-2. untested features are more ***difficult to maintain*** without introducing ***breaking changes***.
+1. if un-tested code remains in the codebase i
+t can contain ***unknown behaviour*** e.g. ***bugs***.
+2. untested features are more ***difficult to maintain***
+without introducing ***breaking changes***.
 3. un-tested code can ***clutter*** a project and accumulates [***technical debt***](https://en.wikipedia.org/wiki/Technical_debt) that ***wastes time***.
 
 ## What?
@@ -31,7 +42,8 @@ The rest of this page will focus on *practical* usage example, so
 if you are completely new to Code Coverage we recommend you read the
 wikipedia article: http://en.wikipedia.org/wiki/Code_coverage first.
 
-*Istanbul* is a code coverage analysis script you run when executing your unit tests:
+*Istanbul* is a code coverage analysis script you run
+when executing your unit tests:
 https://github.com/gotwarlost/istanbul/
 we like it because it's simple and prints out nice html reports (*see below*)
 
@@ -47,8 +59,8 @@ We prefer to install istanbul as a "*devDependencies*" in each of our projects:
 npm install istanbul --save-dev
 ```
 
-to check if the installation worked, (*copy-paste and*) run the following command
-in your terminal:
+to check if the installation worked, (*copy-paste and*)
+run the following command in your terminal:
 
 ```sh
 node_modules/.bin/istanbul help
@@ -83,7 +95,8 @@ Alternatively you can insert the line
 "coverage": "istanbul cover ./test.js"
 ```
 
-into the scripts section of your `package.json` and run
+into the scripts section of your `package.json`
+and run the following command in your terminal:
 
 ```sh
 npm run coverage
@@ -92,8 +105,10 @@ npm run coverage
 This will create a directory in your project called **coverage**
 where you will find the generated coverage reports.
 In our case:
-[learn-istanbul/**coverage/lcov-report**/learning-istanbul/**test1.js.html**]()
-If you open the test1.js**.html** file in your browser
+learn-istanbul/**coverage/lcov-report**/learning-istanbul/**test1.js.html**
+<br />
+
+If you open the test1.js**.html** file in your web browser
 you will see a *visual* coverage report:
 
 
@@ -101,9 +116,13 @@ you will see a *visual* coverage report:
 ![Basic coverage report](https://cloud.githubusercontent.com/assets/194400/14235269/27f13d9a-f9f1-11e5-9b43-5c8c659717e0.png)
 
 Istanbul gives us four code coverage metrics:
-* **Statements**: How many of the [statements](http://www.2ality.com/2012/09/expressions-vs-statements.html) in you code are executed.
-* **Branches**: Conditional statements create branches of code which may not be executed (e.g. `if/else`). This metric tells you how many of your branches have been executed.
-* **Functions**: The proportion of the functions you have defined which have been called.
+* **Statements**: How many of the [statements](http://www.2ality.com/2012/09/expressions-vs-statements.html)
+in you code are executed.
+* **Branches**: Conditional statements create branches of code
+which may not be executed (e.g. `if/else`).
+This metric tells you how many of your branches have been executed.
+* **Functions**: The proportion of the functions you have defined
+which have been called.
 * **Lines**: The proportion of lines of code which have been executed.
 
 when you click `test.js` to view the coverage for the file you see:
@@ -161,9 +180,11 @@ the rogue code will be in production and soon forgotten.
 
 ![100 % Code Coverage includes Rogue Code](https://cloud.githubusercontent.com/assets/194400/14235588/c18e7ee6-f9fa-11e5-93c8-48ba6a25f2da.png)
 
-The solution here is to *not* rely (*solely*) on tools such as Istanbul to check code.
-Its *essential* would advocate a separation between the people writing the tests and the developers
-who write the code.
+The solution here is to *not* rely (*solely*)
+on tools such as Istanbul to check code.
+Its *essential* would advocate a separation
+between the people writing the tests
+and the developers who write the code.
 
 And there is still *no substitute* for **Code Review**!
 
@@ -183,7 +204,8 @@ Thankfully, there are a few you can chose from:
 + Codeclimate: https://codeclimate.com/features
 + Codacy: https://codacy.com/product
 
-We have used all the services and found that ***Codecov*** is the *clear winner* for 3 reasons:
+We have used all the services and found that ***Codecov*** i
+s the *clear winner* for 3 reasons:
 
 1. *Easy* to integrate with existing Continuous Integration (CI) setup e.g. [Travis-CI](https://github.com/dwyl/learn-travis)
 2. Great stats and visualisations
@@ -191,7 +213,8 @@ We have used all the services and found that ***Codecov*** is the *clear winner*
 
 ### Setup
 
-1. Sign-up to use Codecov (*Free*) using your GitHub account: https://codecov.io/
+1. Sign-up to use Codecov (*Free*) using your GitHub account:
+https://codecov.io/
 
 2. Select the repository you want to track coverage for from your list.
 
@@ -263,6 +286,3 @@ https://github.com/gotwarlost/istanbul
 should not to be confused with [istanbul](https://wiki.gnome.org/Istanbul)
 the desktop screen recorder, they are totally diferent animals!
 Shame about the name collision... :-(
-
-[![HitCount](https://hitt.herokuapp.com/dwyl/learn-istanbul.svg)](https://github.com/dwyl/learn-istanbul)
-[![Join the chat at https://gitter.im/dwyl/chat](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/dwyl/chat?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
