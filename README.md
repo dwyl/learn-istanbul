@@ -140,7 +140,7 @@ only 2/3 of the code is being run
 This may be a *trivial* example but it shows
 exactly where the useless code is.
 
-#### A more "Real World" Example
+#### A more "Real World" Example
 
 Try executing the `mischief.js` file by running `npm test`:
 
@@ -212,7 +212,7 @@ s the *clear winner* for 3 reasons:
 2. Great stats and visualisations
 3. Pull request message informs if coverage has changed (*see below*)
 
-### Setup
+### Setup
 
 1. Sign-up to use Codecov (*Free*) using your GitHub account:
 https://codecov.io/
