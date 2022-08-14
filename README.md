@@ -8,7 +8,7 @@
 [![Code Climate](https://img.shields.io/codeclimate/maintainability/dwyl/learn-istanbul.svg?style=flat-square)](https://codeclimate.com/github/dwyl/learn-istanbul)
 [![devDependencies Status](https://david-dm.org/dwyl/learn-istanbul/dev-status.svg?style=flat-square)](https://david-dm.org/dwyl/learn-istanbul?type=dev)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/dwyl/learn-istanbul/issues)
-[![HitCount](http://hits.dwyl.io/dwyl/learn-istanbul.svg)](http://hits.dwyl.io/dwyl/learn-istanbul)
+[![HitCount](https://hits.dwyl.com/dwyl/learn-istanbul.svg)](https://hits.dwyl.io/dwyl/learn-istanbul)
 <br />
 
 Learn how to use Istanbul
