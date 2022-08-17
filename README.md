@@ -4,7 +4,7 @@
 <br />
 
 [![Build Status](https://img.shields.io/travis/dwyl/learn-istanbul/master.svg?style=flat-square)](https://travis-ci.org/dwyl/learn-istanbul)
-[![codecov.io](https://img.shields.io/codecov/c/github/dwyl/learn-istanbul/master.svg?style=flat-square)](http://codecov.io/github/dwyl/learn-istanbul?branch=master)
+[![codecov.io](https://img.shields.io/codecov/c/github/dwyl/learn-istanbul/master.svg?style=flat-square)](https://codecov.io/github/dwyl/learn-istanbul?branch=master)
 [![Code Climate](https://img.shields.io/codeclimate/maintainability/dwyl/learn-istanbul.svg?style=flat-square)](https://codeclimate.com/github/dwyl/learn-istanbul)
 [![devDependencies Status](https://david-dm.org/dwyl/learn-istanbul/dev-status.svg?style=flat-square)](https://david-dm.org/dwyl/learn-istanbul?type=dev)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/dwyl/learn-istanbul/issues)
@@ -41,7 +41,7 @@ so you can decide if un-covered lines are [superfluous](https://www.google.com/s
 
 The rest of this page will focus on *practical* usage example, so
 if you are completely new to Code Coverage we recommend you read the
-wikipedia article: http://en.wikipedia.org/wiki/Code_coverage first.
+wikipedia article: https://en.wikipedia.org/wiki/Code_coverage first.
 
 *Istanbul* is a code coverage analysis script you run
 when executing your unit tests:
@@ -117,7 +117,7 @@ you will see a *visual* coverage report:
 ![Basic coverage report](https://cloud.githubusercontent.com/assets/194400/14235269/27f13d9a-f9f1-11e5-9b43-5c8c659717e0.png)
 
 Istanbul gives us four code coverage metrics:
-* **Statements**: How many of the [statements](http://www.2ality.com/2012/09/expressions-vs-statements.html)
+* **Statements**: How many of the [statements](https://www.2ality.com/2012/09/expressions-vs-statements.html)
 in you code are executed.
 * **Branches**: Conditional statements create branches of code
 which may not be executed (e.g. `if/else`).
@@ -190,7 +190,7 @@ and the developers who write the code.
 And there is still *no substitute* for **Code Review**!
 
 
-![87% Test Coverage](http://i.imgur.com/NTI4Pxw.png)
+![87% Test Coverage](https://i.imgur.com/NTI4Pxw.png)
 
 <br />
 
@@ -279,8 +279,8 @@ and have innovated a lot in code coverage tracking making developers lives *much
 
 ### Background Reading
 
-- Ariay's basic tutorial: http://ariya.ofilabs.com/2012/12/javascript-code-coverage-with-istanbul.html
-- Jasmine Test Coverage: http://architects.dzone.com/articles/code-coverage-jasmine-tests
+- Ariay's basic tutorial: https://ariya.io/2012/12/javascript-code-coverage-with-istanbul
+- Jasmine Test Coverage: https://dzone.com/articles/code-coverage-jasmine-tests
 
 Istanbul (the JavaScript Code Coverage tool)
 https://github.com/gotwarlost/istanbul
